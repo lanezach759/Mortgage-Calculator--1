@@ -15,6 +15,10 @@ while first_answer == "no":
   print ("Just to check, you said " + home_price)
   first_answer = input("Is that correct?\n")
 
+# APR
+apr = float(input("What is the APR? "))
+#while apr 
+
 # Down payment calculator using 5% of home price
 down_payment = float(home_price) * 0.05
 print ("Down payment: $" + str(down_payment))
@@ -22,9 +26,9 @@ print ("Down payment: $" + str(down_payment))
 loan = float(home_price) - float(down_payment)
 
 # Average CA APR + monthly APR rate
-apr = .0294
+# apr = .0294 # TEST 
 monthly_apr = float(apr) / 12
-####### APR IS ONLY FOR 12 MONTHS NEED TO ADJUST FOR 30 YEARS TOTAL
+##
 monthly_loan = float(loan) / 360
 
 ## Bottom half of equation
